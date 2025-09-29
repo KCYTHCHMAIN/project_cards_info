@@ -16,4 +16,7 @@ npm run dev
 
 <p align="center">
   <img src="./image_project/Screenshot 2025-09-29 203829.png" alt="Project Cards Info Banner" width="880">
+   <img src="./image_project/Screenshot 2025-09-29 203844.png" alt="Project Cards Info Banner" width="880">
+   <img src="./image_project/Screenshot 2025-09-29 203850.png" alt="Project Cards Info Banner" width="880">
+   <img src="./image_project/Screenshot 2025-09-29 203900.png" alt="Project Cards Info Banner" width="880">  
 </p>
