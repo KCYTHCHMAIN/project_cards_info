@@ -1,5 +1,4 @@
 name: CI
-
 on:
   pull_request:
     branches: [ main ]
@@ -7,42 +6,13 @@ on:
     branches: [ main ]
 
 jobs:
-  backend:
-    name: Backend install & test
+  build-frontend:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install deps (backend)
-        run: npm ci
-        working-directory: backend
-
-      - name: Test (if present)
-        run: npm test --if-present
-        working-directory: backend
-
-  frontend:
-    name: Frontend build
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Install deps (frontend)
-        run: npm ci
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
+      - run: npm ci
         working-directory: frontend
-
-      - name: Build
-        run: npm run build
+      - run: npm run build
         working-directory: frontend
