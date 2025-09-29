@@ -1,0 +1,49 @@
+# ===== Node (ทั่วไป) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ===== Env files (ห้าม push ของจริง) =====
+.env
+.env.*
+backend/.env
+frontend/.env
+
+# ===== Build / Coverage =====
+dist/
+build/
+coverage/
+frontend/dist/
+frontend/build/
+frontend/.vite/
+backend/coverage/
+
+# ===== Backend outputs / temps =====
+backend/dist/
+backend/tmp/
+backend/logs/
+
+# ===== Uploads (เก็บโฟลเดอร์ แต่ไม่เอาไฟล์ขึ้น repo) =====
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# ===== OS / Editor =====
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ===== Misc caches =====
+*.pid
+*.seed
+*.pid.lock
+*.tgz
+.eslintcache
+.stylelintcache
+
+# ===== Docker / Compose (ถ้ามี) =====
+docker-data/
+*.local.yml

@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* เอฟเฟกต์เล็กน้อยให้ดูนุ่มนวล */
+html, body, #root { height: 100%; }
