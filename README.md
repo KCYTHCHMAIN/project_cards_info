@@ -12,3 +12,7 @@ cd ../frontend
 npm i
 npm run dev
 # .env ดูจาก frontend/.env.example
+
+<p align="center">
+  <img src="./docs/images/banner.png" alt="Project Cards Info Banner" width="880">
+</p>
